@@ -1,0 +1,59 @@
+h1 {
+    color: #ff9fe7;
+    background-color: dimgray;
+    /*font-family: "Bitcount Prop Single Ink", system-ui;
+    /* achtung, da isch funre website, also devo abhängig, u could also download it and
+    put it in this ordner) */
+}
+
+body {
+   margin: 0px;
+   padding: 0px;
+}
+@media (prefers-color-scheme: dark) {
+body {
+   background-color: rgb(58, 56, 56);
+    color: white;
+  }
+}
+/*Sie können mit CSS darauf reagieren, wenn jemand den Dark Mode aktiviert hat, 
+und eine angepasste Version der Website bereitstellen. Das bedeutet, dass eigene 
+Formatierungen nur im Dark Mode angewendet werden. */
+
+header {
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+#Home {
+    padding: 0px 10px 0px 5px;
+}
+#Kontakt {
+    padding: 0px 10px 0px 5px;
+}
+#Gallerie {
+    padding: 0px 10px 0px 5px;
+}
+
+main {
+    border: 4px dashed red;
+    background-image: url("pfp.jpg");
+    background-size: 3%; 
+    padding: 16px;
+}
+
+footer {
+    background-color: dimgray;
+}
+
+p {
+    color: #FF1493;
+}
+
+h2 {
+    color: #FF1493;
+}
+
+h3 {
+    color: #FF1493;
+}
