@@ -4,25 +4,42 @@
 <head>
     <title>I habs eims Website</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body>
     <header>
         <h1>Homepage</h1>
-        <nav> 
-            <a id= "Home" href="index.html">Home </a>  
-            <a id= "Kontakt" href="kontakt.html">Kontakt </a>
-            <a id="Gallerie" href="gallerie.html" >Gallerie </a>
+        <nav>
+            <a id="Home" href="index.html">Home </a>
+            <a id="Kontakt" href="kontakt.html">Kontakt </a>
+            <a id="Gallerie" href="gallerie.html">Gallerie </a>
         </nav>
     </header>
 
     <main>
-    <img src="pfp.jpg" width="300px" alt="[Beschreibung Bild]" />
-    <ul>
-        <li><a href="mailto:[Email]">[Angezeigte Email]</a></li>
-        <li><a href="tel:[Telefonnummer]">[Angezeigte Nr]</a></li>
-        <li><a href="[Link]" target="_blank">[Angezeites Insta]</a></li>
-    </ul>
+        <img id="pic" src="pfp.jpg" width="20%" alt="[Beschreibung Bild]" />
+        <ul>
+            <li><a href="mailto:[Email]">[Angezeigte Email]</a></li>
+            <li><a href="tel:[Telefonnummer]">[Angezeigte Nr]</a></li>
+            <li><a href="[Link]" target="_blank">[Angezeites Insta]</a></li>
+        </ul>
+        <p>
+            <audio id="audio">
+                <!--wenn s [controls] noch audio weg isch, isch s audio immerno dete eif ned abspielbar/sichtbar -->
+                <source src="t-rex-roar.mp3" type="audio/mpeg">
+            </audio>
+        </p>
+        <script> /*do im script gelted java regle drum isch de comment mit dene zeiche */
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+
+            var picButton = document.getElementById("pic");
+            picButton.addEventListener('click', () => play()); /* da isch wemmes klickt souneffekt */
+            picButton.addEventListener('mouseover', () => play()); /* da wemme hoveret */
+        </script>
     </main>
     <footer>
         ® 2025 gremlin
